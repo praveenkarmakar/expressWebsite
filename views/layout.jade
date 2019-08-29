@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    |     
+    title Home
+    |     
+    link(href='css/bootstrap.css', rel='stylesheet')
+  |   
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      a.navbar-brand(href='#') Navbar
+      |   
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      |   
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/')
+              | Home 
+              span.sr-only (current)
+          |       
+          li.nav-item
+            a.nav-link(href='/about') About
+
+          li.nav-item
+            a.nav-link(href='/contact') contact
+          |       
+          li.nav-item
+            a.nav-link.disabled(href='#') Disabled
+    main(role='main')
+      
+    block content
+    hr
+    footer.container
+       p(class = 'text-center') &copy; Company 2017-2019
