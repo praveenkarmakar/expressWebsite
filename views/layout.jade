@@ -11,7 +11,7 @@ html(lang='en')
   |   
   body
     nav.navbar.navbar-expand-md.navbar-dark.bg-dark
-      a.navbar-brand(href='#') Navbar
+      a.navbar-brand(href='/') Tutes
       |   
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
@@ -31,6 +31,7 @@ html(lang='en')
           |       
           li.nav-item
             a.nav-link.disabled(href='#') Disabled
+        a.btn.btn-outline-success.my-2.my-sm-(href= "/login") Search
     main(role='main')
       
     block content
